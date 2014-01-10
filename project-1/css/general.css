@@ -1,0 +1,896 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+html{
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+body {
+	background-image:url(../images/backgroundtexture.png);
+}
+
+h1{
+	text-align: left;	
+	font-family: 'Overlock SC', cursive;
+	text-shadow: #666 4px 4px 4px;
+	font-size: 1rem;
+	margin-left: 1rem;	
+	padding-right: 56px;
+	color: #582D31;
+}
+
+h2 {
+	font-size: .75rem;
+	margin: 1rem;
+	text-align:center;
+	font-family: 'Asul', sans-serif;
+	text-align: left;
+	color: #900;
+}
+
+h3 {
+	margin: 1rem;
+	font-size: 1.75rem;
+	text-align: center;
+	font-family: 'Overlock SC', cursive;
+	text-shadow: #666 4px 4px 4px;
+	color: #900;		
+}
+
+h4 {
+	background-color: #FC3;
+	color: #000;
+	text-align: center;
+	padding: 3px;
+	margin: .5rem;	
+}
+
+h5 {
+	margin: 1rem;
+	font-size: 1.75rem;
+	text-align: center;
+	font-family: 'Overlock SC', cursive;
+	text-shadow: #666 4px 4px 4px;
+	color: #C00;			
+}
+
+.andre {
+	display: none;	
+}
+
+p {
+	font-size: 1rem;
+	text-align: center;	
+	font-family: 'Asul', sans-serif;
+	margin: 1rem;
+}
+
+.extra {
+	display: none;	
+}
+
+.contact{
+	font-size: 1rem;
+	font-family: 'Asul', sans-serif;
+	margin: 1rem;
+}
+
+.highlight {
+	display: none;
+}
+
+main img {
+	width: 100%;
+	margin-top: 1rem;	
+}
+
+.business-card{
+	display: none;
+}
+
+.collage2 {
+	display: none;
+}
+
+li {
+	text-align: center;	
+}
+
+/* Main Nav */
+
+nav {
+	background-image: url(../images/navtexture.png);
+	width:100%;
+	height: 3rem;
+	text-align: center;
+	font-size: .75rem;
+	font-family: 'Overlock SC', cursive;
+}
+
+nav li {
+	display:inline; /* The navigations blocks & its position */
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+	display: inline-block;
+	height: 3rem;
+	margin-top: 0 2%;
+	padding: .8rem 3%;
+	color: #000; /*the font colour*/
+	text-decoration: none;
+	font-family: 'Overlock SC', cursive;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+	background-color: #93A083; /* the colour changes when cursor is over */ 
+}
+
+/* Toggle Nav CSS */
+
+.hide-text {
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
+}
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited{
+	display: block;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 16px;	
+	right: 5%;
+	
+	background: #95A6B1 url('../images/nav-icon.svg') no-repeat center center;
+	/* background-color || background-image || background-repeat || background-position*/
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active{
+	background-color: #ccc;
+}
+
+.nav ul {
+	width:100%;
+	text-align: center;
+	font-size: 1rem;
+}
+
+.nav li {
+	display: block; /* The navigations blocks & its position */
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited {
+	background-color: #554527; /* the line */
+
+	display: block; /* The navigations blocks & its position */
+	height: 3rem;
+	margin-top: 0 2%;
+	padding: .8rem 3%;
+	color: #FFF; /*the font colour*/
+	text-decoration: none;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active {
+	background-color: #999; /* the colour changes when cursor is over */ 
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active, 
+.active{
+	background-color: #83989E; /* the colour changes when cursor is over */ 
+}
+
+.nav-top{
+	display: none;
+}
+
+.nav-top[data-state="expanded"]{
+	display: block;
+	position: relative;
+	margin-bottom: 13rem;
+}
+
+@media only screen and (min-width: 21em) {
+
+	nav {
+		background-image: url(../images/navtexture.png);
+		width:100%;
+		height: 3rem;
+		text-align: center;
+		font-size: 1rem;
+		font-family: 'Overlock SC', cursive;
+	}
+	
+
+	nav li {
+		display:inline; /* The navigations blocks & its position */
+	}
+	
+	nav a,
+	nav a:link,
+	nav a:visited {
+		display: inline-block;
+		height: 3rem;
+		margin-top: 0 2%;
+		padding: .8rem 3%;
+		color: #000; /*the font colour*/
+		text-decoration: none;
+		font-family: 'Overlock SC', cursive;
+	}
+	
+	nav a:hover,
+	nav a:focus,
+	nav a:active {
+		background-color: #93A083; /* the colour changes when cursor is over */ 
+	}
+		
+	h1 {
+		font-size: 1.4rem;	
+	}
+	
+	h2 {
+		font-size: 1rem;	
+	}
+	
+	nav a:hover,
+	nav a:focus,
+	nav a:active, 
+	.active{
+		background-color: #FFF; /* the colour changes when cursor is over */ 
+	}
+		
+}
+
+@media only screen and (min-width: 25em) {
+	
+	nav {
+		background-image: url(../images/navtexture.png);
+		width:100%;
+		height: 3rem;
+		text-align: center;
+		font-size: 1rem;
+		font-family: 'Overlock SC', cursive;
+	}
+	
+
+	nav li {
+		display:inline; /* The navigations blocks & its position */
+	}
+	
+	nav a,
+	nav a:link,
+	nav a:visited {
+		display: inline-block;
+		height: 3rem;
+		margin-top: 0 2%;
+		padding: .8rem 3%;
+		color: #000; /*the font colour*/
+		text-decoration: none;
+		font-family: 'Overlock SC', cursive;
+	}
+	
+	nav a:hover,
+	nav a:focus,
+	nav a:active {
+		background-color: #93A083; /* the colour changes when cursor is over */ 
+	}
+	
+	.nav-btn, .nav-btn:link {
+		visibility: hidden;
+	}
+	
+	.nav-bottom {
+		display: none;
+		visibility: hidden;	
+	}
+	
+	.nav a,
+	.nav a:link,
+	.nav a:visited {
+		background-color: #554527; 
+	
+		display: block; 
+		height: 3rem;
+		margin-top: 0 2%;
+		padding: .8rem 3%;
+		color: #FFF; 
+	}
+	
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited{
+		visibility: hidden;
+	}
+	
+	.nav-btn:hover, 
+	.nav-btn:focus,
+	.nav-btn:active{
+		background-color: #0C9;
+	}
+
+	.nav-top a:hover{
+		background: #999;
+	}
+	
+	h1 {
+		text-align: center;	
+		font-size: 1.5rem;
+	}
+	
+	h2 {
+		text-align: center;
+		font-size: 1.5rem;	
+	}
+	
+	.collage {
+		width: 60%;
+		float: right;	
+	}
+	
+	.box {
+		float: left;
+		padding-top: 3rem;	
+	}
+	
+	.business-card {
+		width: 90%;
+		display: block;	
+		margin-left: 1.5rem;
+		margin-top: 1rem;
+		margin-right: 1rem;	
+	}
+	
+	.des {
+		margin-top: -4rem;
+		float: right;
+		position: relative;
+		margin-left: 35%;	
+	}
+	
+	p {
+		text-align: left;	
+	}
+	
+	.nav-top {
+		display: block;
+		width: 35%;
+		float: left;
+		margin-top: 1rem;	
+	}
+	
+	nav a:hover,
+	nav a:focus,
+	nav a:active, 
+	.active{
+		background-color: #FFF; /* the colour changes when cursor is over */ 
+	}
+	
+	.image-list{
+		overflow: auto;
+		clear: both;
+		padding-top: 5rem;
+	}
+
+	.image-list li{
+		width: 45%;
+		margin: 2.5%;
+		float: left;
+		margin-top: 3rem;
+	}
+	
+	.contact {
+		clear: both;	
+	}	
+		
+}
+
+@media only screen and (min-width: 40em) {
+
+	.nav-btn, .nav-btn:link {
+		visibility: hidden;
+		display: none;
+	}
+	
+	.nav-bottom {
+		display: none;
+		visibility: hidden;	
+	}
+	
+	.nav a,
+	.nav a:link,
+	.nav a:visited {
+		background-color: #554527; 
+		display: block; 
+		height: 3rem;
+		margin-top: 0 2%;
+		padding: .8rem 3%;
+		color: #FFF; 
+	}
+	
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited{
+		visibility: hidden;
+	}
+	
+	main img {
+		width: 70%;
+		float: right;
+		overflow: hidden;	
+	}
+	
+	.box {
+		float: left;	
+	}
+	
+	.business-card {
+		width: 45%;	
+		margin-bottom: 1rem;
+		margin-left: 1rem;
+		margin-top: 1rem;	
+	}
+	
+	.collage {
+		visibility: hidden;
+		display: none;
+	}
+	
+	.collage2 {
+		display: block;
+		margin-top: 1rem;	
+	}
+	
+	h1 {
+		font-size: 1.5rem;
+		text-align: left;
+		margin-left: 10px;
+	}
+	
+	h2 {
+		font-size: 1.25rem;
+	}
+	
+	p {
+		text-align: left;	
+	}
+	
+	.title {
+		text-align: right;
+		display: block;
+		float: right;
+		margin-top: -8rem;		
+	}
+	
+	.des {
+		margin-top: -4rem;
+		float: right;
+		position: relative;
+		margin-left: 30%;	
+	}
+	
+	.nav-top {
+		display: block;
+		width: 25%;
+		float: left;
+		margin: 1rem;	
+	}
+	
+	nav a:hover,
+	nav a:focus,
+	nav a:active, 
+	.active{
+		background-color: #FFF; /* the colour changes when cursor is over */ 
+	}
+	
+	.nav-top a:hover{
+		background: #999;
+	}
+	
+	.image-list{
+		overflow: auto;
+		padding-left: 1.5rem;
+	}
+
+	.image-list li{
+		width: 30%;
+		margin: 1%;
+		margin-top: 2rem;
+		float: left;
+	}
+	
+	.main-image{
+		width: 100%;	
+	}
+	
+	.contact {
+		clear: both;	
+	}
+}
+
+@media only screen and (min-width: 50em) {
+
+	.title {
+		text-align: right;
+		display: block;
+		margin-top: -10rem;
+		float: right;		
+		margin-right: 2rem;		
+	}
+	
+	h1 {
+		font-size: 1.5rem;
+		text-align: left;	
+	}
+	
+	h2 {
+		font-size: 1.5rem;	
+		text-align: left;
+	}
+	
+	h3 {
+		margin-top: -2rem;	
+	}
+	
+	p {
+		text-align: left;	
+	}
+	
+	.des {
+		margin-top: -1rem;
+		float: right;
+		position: relative;
+		margin-left: 30%;	
+	}
+	
+	.nav-top a:hover{
+		background: #999;
+	}
+	
+	.business-card {
+		margin-left: 1rem;
+		margin-top: 1rem;	
+	}
+	
+	.andre {
+		display: block;
+		font-family:'Overlock SC', cursive; 
+		font-size: 1.5rem;
+		width: auto;	
+	}
+	
+	.nav-top a:hover{
+		background: #999;
+	}
+	
+	.collage {
+		visibility: hidden;
+		display: none;
+	}
+	
+	.collage2 {
+		display: block;
+		margin-top: 1rem;
+		width: 60%;	
+		margin-right: 2rem;
+	}
+	
+	nav a:hover,
+	nav a:focus,
+	nav a:active, 
+	.active{
+		background-color: #FFF; /* the colour changes when cursor is over */ 
+	}
+	
+	.nav-top {
+		display: block;
+		width: 25%;
+		float: left;
+		margin: 1rem;	
+	}
+	
+	.image-list{
+		overflow: auto;
+	}
+
+	.image-list li{
+		width: 45%;
+		margin: 2.5%;
+		float: left;
+		margin-top: 3rem;
+		margin-right: 1rem;
+	}
+	
+	.contact {
+		clear: both;	
+	}
+	
+}
+
+@media only screen and (min-width: 60em) {
+
+	nav a:hover,
+	nav a:focus,
+	nav a:active, 
+	.active{
+		background-color: #3A474F; /* the colour changes when cursor is over */ 
+	}
+	
+	.nav-top {
+		display: block;
+		width: 25%;
+		float: left;
+		margin: 1rem;	
+	}
+	
+	.title {
+		text-align: right;
+		display: block;
+		float: right;
+		margin-top: -12rem;
+		margin-right: 2rem;		
+	}
+	
+	.andre {
+		text-align: left;	
+	}
+	
+	h1 {
+		font-size: 1.5rem;			
+	}
+	
+	h2 {
+		font-size: 1.5rem;
+		text-align: left;	
+	}
+	
+	h3 {
+		padding-top: 4rem;	
+	}
+	
+	.blurb {
+		margin-left: 4rem;	
+		margin-right: 2rem;
+	}
+	
+	.des {
+		margin-top: -1rem;
+		float: right;
+		position: relative;
+		margin-left: -3rem;	
+	}
+	
+	p {
+		text-align: left;	
+	}
+	
+	.highlight {
+		display: block;
+		background-color:#FFF;	
+	}
+	
+	main {
+		width: 70%;	
+		float: right;
+	}
+	
+	.box {
+		float: right;
+		width: 47.5%;	
+	}
+	
+	.business-card {
+		margin-left: 1rem;
+		margin-top: 1rem;	
+	}
+	
+	.collage {
+		visibility: hidden;
+		display: none;
+	}
+	
+	.collage2 {
+		display: block;
+		margin-top: 2rem;
+		margin-bottom: 1.5rem;
+		width: 47.5%;	
+		float: left;	
+	}	
+	
+	.extra {
+		display: block;
+		margin-left: 0;
+		margin-right: 375px;
+		float: right;
+		margin-top: -10rem;	
+		color: #C33;
+	}
+	
+	.contact{
+		position: absolute;
+		text-align: right;
+		padding-top: 11rem;	
+		padding-left: 2rem;	
+		margin-bottom: 3rem;
+	}
+		
+	nav {
+		background-color: #CCC;
+		width:100%;
+		height: 4rem;
+		text-align: center;
+		font-size: 3rem;
+		font-family: 'Overlock SC', cursive;
+	}
+
+	nav li {
+		display:inline; /* The navigations blocks & its position */
+	}
+	
+	nav a,
+	nav a:link,
+	nav a:visited {
+		display: inline-block;
+		height: 3rem;
+		margin-top: 0 2%;
+		padding: .8rem 3%;
+		color: #000; /*the font colour*/
+		font-family: 'Overlock SC', cursive;
+		font-size: 1.5rem;
+	}
+	
+	nav a:hover,
+	nav a:focus,
+	nav a:active, 
+	.active{
+		background-color: #FFF; /* the colour changes when cursor is over */ 
+	}
+	
+	.nav-top a:hover{
+		background: #999;
+	}
+	
+	.image-list{
+		overflow: auto;
+	}
+
+	.image-list li{
+		width: 80%;
+		float: left;
+	}
+	
+}
+
+@media only screen and (min-width: 80em) {
+	
+	.title {
+		text-align: right;
+		display: block;
+		float: right;
+		margin-top: -16rem;
+		margin-right: 2rem;		
+	}
+	
+	h1 {
+		font-size: 2rem;	
+	}
+	
+	h2 {
+		font-size: 2rem;	
+	}
+	
+	p {
+		text-align: left;	
+	}
+	
+	.box {
+		margin-top: -18rem;	
+	}
+	
+	.business-card {
+		width: 40%;	
+		margin-bottom: 1rem;
+		margin-top: 1rem;
+		margin-left: 1rem;
+	}
+	
+	.collage {
+		visibility: hidden;
+		display: none;
+	}
+	
+	.collage2 {
+		display: block;
+		margin-top: 2rem;
+		width: 50%;	
+	}
+	
+	.extra {
+		display: block;
+		margin-left: 0;
+		margin-right: 500px;
+		float: right;
+		margin-top: -14rem;
+	}
+	
+	.contact{
+		position: relative;
+		text-align: right;
+		padding-top: 10rem;
+		
+	}
+	
+	.nav-top a:hover{
+		background: #999;
+	}
+	
+	.image-list{
+		overflow: auto;
+	}
+
+	.image-list li{
+		width: 45%;
+		margin: 2.5%;
+		float: left;
+	}
+	
+}
+
+@media only screen and (min-width: 90em){
+	
+	.extra {
+		display: block;
+		margin-left: 0;
+		margin-right: 570px;
+		float: right;
+		margin-top: -14rem;	
+		font-size: 5rem;
+	}
+	
+	.contact {
+		padding-top: 1rem;
+		padding-left: 1rem;
+		padding-right: 35rem;	
+	}
+	
+	.box {
+		padding-top: 8rem;	
+	}
+	
+}
+
+footer{
+	clear: both;
+	position: relative;
+	bottom: -2rem;
+	background-image: url(../images/footertexture.png);
+}
+
+footer p {
+	font-size: .75rem;
+	text-align: right;	
+	padding: 1.5rem;
+	margin-top: 12rem;
+}
